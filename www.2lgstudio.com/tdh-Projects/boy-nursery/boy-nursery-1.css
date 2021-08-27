@@ -1,0 +1,404 @@
+@font-face{
+    font-family: "StanleyBold";
+    src: url(../../Fonts/StanleyBold.ttf)
+}
+@font-face{
+    font-family: "GrotesqueMTStd";
+    src: url(../../Fonts/GrotesqueMTStd.ttf)
+}
+body {
+  background-color: #f1f1ef;
+  font-size:16px;
+  color: #3c3c3b;
+  font-family: "GrotesqueMTStd";
+/*  font-weight: bold;*/
+  box-sizing: border-box;
+        opacity: 0; 
+            transition: opacity 3s;
+}
+
+#header{
+  position:fixed;
+  right:0;
+  left:0;
+  padding-top: 50px;
+  padding-bottom: 70px;
+  top:0px;
+    background-color: #F1F1EF;
+    z-index: 900;
+    
+}
+#takkaka{
+  position: relative;
+  min-width: 1px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+#header-menu{
+    font-family: "GrotesqueMTStd";
+    font-size: 1.125em;
+/*   border: 1px solid green; */
+}
+#center-menu{
+  position: absolute;
+  left: 50%; 
+    ;
+}
+#center-menu a{
+    color: #3c3c3b;
+    font-family: "GrotesqueMTStd";
+    font-size: 27px;
+}
+#left-menu a, #right-menu a{
+   font-family: "GrotesqueMTStd";
+    font-size: 18px;
+}
+#left-menu{
+  position:absolute;
+  left: 15px;
+}
+#right-menu{
+  position: absolute;
+  right: 15px;
+    font-family: "GrotesqueMTStd";
+    font-size: 1.125em;
+}
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a{
+   list-style: none; 
+    text-decoration: none;
+}
+li{
+  display: inline;
+    font-size:20px;
+    list-style: none;
+}
+#left-menu li{
+padding-right: 30px;
+/*font-size: 21px;*/
+}
+#right-menu li{
+  padding-left: 30px;
+}
+#center-menu{
+  padding-top: 1px;
+  transform: translate(-50%);
+}
+/*
+#footer{
+  margin-bottom: 25px;
+  padding-top: 25px;
+  position:absolute;
+  bottom: 0px;
+  left: 0px;
+  right:0px;
+  font-weight: 400;
+    background-color: red;
+}
+*/
+#main-paragraph{
+  max-width: 800px;
+  text-align: center;
+    margin-left:auto;
+    margin-right: auto;
+    font-family: "StanleyBold";
+    padding-top: 250px;
+padding-bottom: 150px;
+}
+#main-paragraph p {
+    font-family: "StanleyBold";
+    font-size: 30px;   
+    margin:0;
+/*    font-weight: 600;*/
+}
+#auther{
+  position: absolute;
+  bottom: 100px;
+  text-align: center;
+  width: 100%;
+    line-height: 1.3;
+}
+#auther p{
+    font-family: "GrotesqueMTStd";
+    font-size: 1.125em;
+    font-size: 16px;
+}
+/*
+#footer li{
+    font-size: 14px;
+    font-family: "GrotesqueMTStd";
+}
+*/
+li a{
+    font-family: "GrotesqueMTStd";
+    text-decoration: none;
+    font-family: Corbel;
+/*    font-weight: bold;*/
+color: #3c3c3b;
+}
+#menu-icon{
+    visibility: hidden;
+    position:absolute;
+    left:30px;
+}
+.current-menu-item a:after{
+    content:".";
+    position: absolute;
+    top: 15px;
+    left: 50%;
+}
+#content{
+margin-left: auto;
+    margin-right: auto;
+      position: relative;
+/*        width: 100%;*/
+/*    position: absolute;*/
+    /*    top: 0%;*/
+/*    left: 50%;*/
+/*    transform: translate(-50%,0);*/
+}
+#contact-info{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 23px;
+    font-family: "StanleyBold";
+}
+#inquiries{
+    width: 100%;
+    text-align: center;
+/*    font-weight: 600;*/
+}
+#inquiries p{
+     font-family: "StanleyBold";
+    font-size: 26px;
+    margin: 20px;
+}
+#telephone{
+    width: 100%;
+    text-align: center;
+
+}
+#telephone p{
+      font-size: 16px;
+     font-family: "GrotesqueMTStd";
+/*    font-weight: regular;*/
+}
+#main-image{
+/*    text-align: center;*/
+    padding-bottom: 150px;
+/*    padding-top: 100px;*/
+/*    max-width:100%;*/
+/*    height: auto;*/
+/*    object-fit: contain;*/
+/*    width: 100vw;*/
+/*    object-fit: contain;*/
+/*    border: 3px solid red;*/
+    max-width: 100%;
+}
+#main-image img{
+/*    margin-top: 80px;*/
+    max-width: 100%;
+/*    height: auto;*/
+/*    object-fit: contain;*/
+/*    border: 3px solid yellow; */
+}
+#project-desc{
+    padding-bottom: 150px;
+  margin-left: auto;
+    margin-right:auto;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+/*    font-size: 17px;*/
+    line-height: 1.3;
+    box-sizing: border-box;
+}
+#project-desc p {
+     font-family: "GrotesqueMTStd";
+    font-size:16px;
+    
+}
+/*
+#background-img{
+    position:absolute;
+    height: 100vh;
+background-image: url(boy-nursery-2.jpg);
+    width:100%;
+    top:0;
+}
+*/
+#project-details img{
+/*    margin-top:200px;*/
+/*    width: 100%;*/
+    padding-left: 15px;
+    padding-right:15px;
+    box-sizing: border-box;
+}
+#project-details .portrait-left img, #project-details .portrait-right img{
+/*    float: left;*/
+/*    max-width: 400px;*/
+    width: 100%;
+    box-sizing: border-box;
+}
+#project-details{
+/*position: absolute;*/
+/*    border: 1px solid blue;*/
+    box-sizing: border-box;
+}
+.portrait-left{
+    padding-top: 200px;
+    max-width: 400px;
+/*    width: 100%;*/
+    float: left;
+/*     width: 49%;*/
+    box-sizing: border-box;
+}
+.portrait-right{
+    padding-top: 200px;
+    float: right;
+/*    width: 49%*/
+    max-width: 400px;
+/*    width: 100%;*/
+    box-sizing: border-box;
+}
+.portrait-left:first-child {
+    padding-top: 0px;
+    box-sizing: border-box;
+}
+
+
+
+#color-strip{
+    display: inline-block;
+    height: 5px;
+    width: 100%;
+    z-index:999;
+    background-color: rgb(126,156,188);
+    top:0;
+    position: fixed;
+    left: 0;
+}
+
+@media only screen and (max-width:600px){
+    #project-details img{
+        padding-right:15px;;
+        padding-left:15px;;
+    }
+    .portrait-left,.portrait-right{
+        padding: 30px 0 0 0; 
+        margin: 0px !important;
+    }
+}
+@media only screen and (max-width:768px) {
+   #main-paragraph{
+        font-size: 20px;
+/*       padding-left: 30px;*/
+/*       padding-right: 30px;*/
+       padding-top: 120px;
+       padding-bottom: 110px;
+    }
+    #contact-info{
+        font-size: 20px;
+    }
+    #main-paragraph p{
+        font-size: 28px;
+    }
+    #inquiries p{
+        font-size: 16px;
+    }
+    #telephone p{
+        font-size: 16px;
+    }
+    #center-menu a{
+        font-size: 20px;
+        
+    }
+    #header{
+        padding-top: 30px;
+       padding-bottom:50px;} 
+    #main-image{
+    padding-bottom: 15px;
+}
+    #project-desc{
+        padding-bottom: 15px;
+    }
+    .portrait-left,.portrait-right{
+        float:none;
+        max-width: 100%;
+    }
+}
+@media only screen and (max-width: 320px){
+ #main-paragraph p{
+        font-size: 19px;
+    }
+    #contact-info{
+        font-size: 19px;
+    }
+/*
+    #inquiries p,#telephone p{
+        font-size: 3px;
+        background-color: red;
+*/
+    }
+@media only screen and (max-width:992px){
+        #menu-icon{
+        visibility: visible;
+    }
+    #header-menu #left-menu,#header-menu #right-menu{
+        visibility: hidden;
+    }
+}
+@media only screen and (min-width:768px) {
+  #takkaka {
+    width: 750px;
+  }
+   #project-desc{
+        padding-bottom: 30px;
+        font-size: 17px;
+    }
+ #project-details img{
+    display:inline;
+    width: 49%;
+}
+}
+@media only screen and (min-width:992px) {
+  #takkaka {
+    width: 970px;
+  }
+    #project-desc{
+        width:66.6%;
+        padding-bottom: 30px;
+        font-size: 17px;
+    }
+
+}
+@media only screen and (min-width:1200px) {
+  #takkaka {
+    width: 1170px;
+  }
+}
+
+
+
+
+
+
+@keyframes fadeinup{
+    0% {
+    opacity: 0;
+    transform: translate3d(0, 150px, 0);
+}
+    100% {
+    opacity: 1;
+    transform: none;
+}
+    
+    
+}
